@@ -1,6 +1,6 @@
 # Flight Delay ML Demo
 
-[Work in progress.]
+**Important:** Work in progress. Demo data rehosted in Blob container (account name: azuremlexamples, container name: flight-delay, paths: data/, images/).
 
 This repo contains the resources for an extended Azure ML demo based on the flight delay scenario.
 
