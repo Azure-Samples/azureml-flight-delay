@@ -1,0 +1,2 @@
+Month,DayofMonth,DayOfWeek,CRSDepTime,CRSArrTime,UniqueCarrier,CRSElapsedTime,Origin,Dest,Distance,Origin_Lat,Origin_Lon,Origin_State,Dest_Lat,Dest_Lon,Dest_State,Origin_dayl,Dest_dayl,Origin_prcp,Dest_prcp,Origin_srad,Dest_srad,Origin_swe,Dest_swe,Origin_tmax,Dest_tmax,Origin_tmin,Dest_tmin,Origin_vp,Dest_vp
+3,30,7,820,930,11,70,75,158,304,32.89595056,-97.0372,41,34.72939611,-92.22424556,2,44236.8,44236.8,0,11,409.6,208.0,0,0,28.5,16.0,15.0,8.5,1720,1120
