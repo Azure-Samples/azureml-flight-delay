@@ -1,5 +1,8 @@
 # Flight Delay ML Demo
 
+New doc for AzureML walkthrough demo at https://github.com/Azure-Samples/azureml-flight-delay/blob/main/docs/AzureML%20Overview%20Demo.docx
+
+
 **Important:** Work in progress. Demo data rehosted in Blob container (account name: azuremlexamples, container name: flight-delay, paths: data/, images/).
 
 This repo contains the resources for an extended Azure ML demo based on the flight delay scenario.
