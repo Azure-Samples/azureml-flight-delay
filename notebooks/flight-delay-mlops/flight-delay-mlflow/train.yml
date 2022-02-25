@@ -1,5 +1,0 @@
-command: python train.py --data {{inputs.weather}}
-environment: sklearn
-inputs:
-  weather: flightdelayweather_ds_clean
-compute: cpucluster
