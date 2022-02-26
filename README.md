@@ -18,7 +18,7 @@ The following prerequisites are required:
 
 AzureML Overview Demo.docx under the `docs` directory walks you through setup and the various demos of Azure ML scenarios.
 
-This button will launch the "Tempalte deployment with a custom template" experience in the Azure Portal to create the workspace and required resources.
+This button will launch the "Custom Deployment from a Template" experience in the Azure Portal to create the AzureML Workspace and required Azure resources.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazureml-flight-delay%2Fmain%2FarmTemplates%2Faml.json)
 
