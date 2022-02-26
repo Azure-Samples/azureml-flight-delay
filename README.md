@@ -11,17 +11,20 @@ The demo walk through document is in azureml-flight-delay/tree/main/docs/AzureML
 ### Prerequisites
 
 The following prerequisites are required:
-1. Azure subscription (you need to be able to create new resources)
-
-For some modules, additional prerequisites are required:
-1. Azure CLI
-1. Visual Studio Code
+1. Azure subscription 
+2. Owner role on the subscription or a resource group in the subscription to create the Workspace and required Azure resources
 
 ### Setup
 
-Follow the documentation in AzureML Overview Demo.docx under the `docs` directory to setup the required infrastructure for this demo.
+AzureML Overview Demo.docx under the `docs` directory walks you through setup and the various demos of Azure ML scenarios.
+
+This button will launch the "Tempalte deployment with a custom template" experience in the Azure Portal to create the workspace and required resources.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazureml-flight-delay%2Fmain%2FarmTemplates%2Faml.json)
+
 
 In case you already have an Azure Machine Learning workspace, you can setup the necessary datasets and upload the notebooks into your existing workspace.
+
 
 ## Modules
 
