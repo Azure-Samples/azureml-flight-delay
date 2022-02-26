@@ -4,7 +4,7 @@
   "parameters": {
   },
   "variables": {
-    "prefix": "gartnerdemo",
+    "prefix": "amlteamdemo",
     "uniquePrefix": "[concat(variables('prefix'), substring(uniqueString(resourceGroup().id), 0, 6))]",
     "registry": {
       "name": "[concat(variables('uniquePrefix'), 'registry')]",
