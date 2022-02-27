@@ -1,0 +1,16 @@
+name: fd-mlflow-mng-endpoint
+type: online
+auth_mode: key
+traffic:
+  blue: 100
+
+deployments:
+  #blue deployment
+  - name: blue
+    model: azureml:fd-mlflow-aks-model:1
+    instance_type: Standard_DS3_v2
+    scale_settings:
+      scale_type: manual
+      instance_count: 1
+      min_instances: 1
+      max_instances: 2

@@ -1,0 +1,6 @@
+command: python train.py --data {{inputs.weather}}
+environment: 
+  image: AzureML-sklearn-1.0-ubuntu20.04-py38-cpu
+inputs:
+  weather: flightdelayweather_ds_clean
+compute: cpu-cluster
