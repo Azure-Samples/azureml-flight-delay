@@ -9,9 +9,5 @@ dependencies:
     - numpy
     - seaborn
     - joblib
-    - azureml-core
     - scikit-learn==0.23.2
-    - mlflow
-    - azureml-defaults
-    - azureml-dataset-runtime
     - azureml-mlflow
