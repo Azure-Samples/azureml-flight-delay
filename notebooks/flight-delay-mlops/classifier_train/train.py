@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import mlflow
 import mlflow.azureml
 import seaborn as sns
+import argparse
 
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
@@ -35,8 +36,7 @@ def split_dataset(X_raw, Y):
 
     return X_train, X_test, Y_train, Y_test, A_train, A_test 
 
-def prepareDataset(X_raw):
-    df = X_raw.to_pandas_dataframe()
+def prepareDataset(df):
     Y = df['ArrDelay15'].values
     synth_df = df.drop(columns=['ArrDelay15'])
     return synth_df, Y
@@ -89,10 +89,18 @@ def analyze_model(clf, X_test, Y_test, preds):
 
 if __name__ == "__main__":
     
-    mlflow.autolog.sklearn()
-    data = argparse(weather).to_pandas_dataframe()
+    parser = argparse.ArgumentParser()
 
-    synth_df, Y = prepareDataset(tabular)
+    parser.add_argument("--data", type=str, help="input data path")
+
+    args = parser.parse_args()
+    print(args.data)
+
+    data = pd.read_csv(args.data+'/flightdelayweather_ds_clean.csv')
+
+    mlflow.sklearn.autolog()
+
+    synth_df, Y = prepareDataset(data)
 
     #Split dataset
     X_train, X_test, Y_train, Y_test, A_train, A_test = split_dataset(synth_df, Y)

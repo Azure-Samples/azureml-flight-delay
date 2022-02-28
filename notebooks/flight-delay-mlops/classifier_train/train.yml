@@ -1,7 +1,9 @@
 command: python train.py --data {{inputs.weather}}
 code:
   local_path: .
-environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:8
+environment: 
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
+  conda_file: conda.yaml
 inputs:
   weather: flightdelayweather_ds_clean
 compute: cpu-cluster
