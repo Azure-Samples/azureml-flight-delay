@@ -5,5 +5,5 @@ environment:
   image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
   conda_file: conda.yaml
 inputs:
-  weather: flightdelayweather_ds_clean
+  weather: azureml:flightdelayweather_ds_clean:1
 compute: cpu-cluster
