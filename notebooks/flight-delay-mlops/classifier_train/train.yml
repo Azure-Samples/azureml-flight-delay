@@ -1,4 +1,4 @@
-command: python train.py --data {{inputs.weather}}
+command: python train.py --data ${{inputs.weather}}
 code:
   local_path: .
 environment: 
